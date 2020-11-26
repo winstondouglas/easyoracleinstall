@@ -1,14 +1,17 @@
 ############### Change Parameter values below ##########################
+# Download the Oracle software from the Oracle download site first
 # Change the location of the Oracle software below
-export O_SOFTWARE="gs://my-project-84307-wd/linuxx64_12201_database.zip"
+# Example: export O_SOFTWARE="gs://my-project-84307-wd/linuxx64_12201_database.zip"
+export O_SOFTWARE="full path for bucket and filename"
 
-# Change the database and PDB names below
+# Change the database names below
 export ORACLE_SID=ORADB01
-export PDB_NAME=ORAPDB01
-export DATA_DIR=/u01/oradata
 
 #Change the passwords for the database below
 export PASSW=WelcomeWelcome1
+
+export PDB_NAME=ORAPDB01
+export DATA_DIR=/u01/oradata
 ###################### Change parameter values above #########################
 
 # Install the Oracle Pre_Install RPM which configures the OS, install required rpms and create the oracle user.
